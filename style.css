@@ -1,0 +1,126 @@
+@font-face {
+    font-family:MyFont ;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: MyFont;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(234, 29%, 20%);
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 20px;
+}
+.right{
+    width: 60%;
+}
+.left{
+    width: 40%;
+}
+.left img{
+    width: 100%;
+}
+ul{
+    list-style-image: url(./assets/images/icon-list.svg);
+}
+li{
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    padding: 10px 20px;
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+button{
+    margin-top: 15px;
+    padding: 15px 20px;
+    font-family: inherit;
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(234, 29%, 20%);
+}
+label{
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.hide{
+    display: none;
+}
+.container-2{
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+}
+.container-2 h1{
+    font-size: 40px;
+}
+.icon{
+    width: 40px;
+}
+.container-2 button{
+    width: 100%;
+}
+.container-2 p{
+    color: hsl(231, 7%, 60%);
+}
+@media (max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    .right{
+        width: 100%;
+        padding: 20px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left img{
+        content: url('./assets/images/illustration-sign-up-mobile.svg');
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    form{
+        width: 90%;
+    }
+    .container-2{
+        min-height: 100vh;
+    }
+    
+    
+}
